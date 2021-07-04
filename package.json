@@ -1,0 +1,25 @@
+{
+  "name": "vocab",
+  "version": "1.0.0",
+  "description": "A simple Vocabulary App",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "start": "node server.js",
+    "client" : "cd client && npm start"
+  },
+  "author": "Ronit Khatri",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
+    "request": "^2.88.2"
+  }
+}
