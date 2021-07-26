@@ -6,7 +6,7 @@ const app = express()
 
 const vocabRoute = require('./routes/vocab')
 const addWordRoute = require('./routes/addWord')
-
+const x = 5;
 //connect to Mongo DB
 mongoose.connect('mongodb+srv://admin:ronitkhatri@vocab.mavsc.mongodb.net/Dictionary?retryWrites=true&w=majority',
 { useUnifiedTopology: true,useNewUrlParser: true })
